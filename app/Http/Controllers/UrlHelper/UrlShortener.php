@@ -27,6 +27,7 @@ class UrlShortener
     }
 
     /**
+     * Генерация короткой строки
      * @return string
      */
     public function getShortUrl(): string
@@ -35,6 +36,7 @@ class UrlShortener
     }
 
     /**
+     * Сохранение в базу оригинального url и соответствующей ему короткой строки
      * @param string $urlShort
      * @param string $originalUrl
      */
@@ -44,6 +46,7 @@ class UrlShortener
     }
 
     /**
+     * Возвращаем оригинальный url
      * @param $urlShort
      * @return string
      */

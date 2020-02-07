@@ -27,6 +27,8 @@ class UrlController extends Controller
     }
 
     /**
+     * Принимаем данные из запроса , генерируем строку для полученного url,
+     * сохраняем в базу длинный и короткий url, возвращаем сформированный ответ, содержащий сгенерированную строку
      * @param Request $request
      * @return \Illuminate\Http\JsonResponse
      */
@@ -48,6 +50,7 @@ class UrlController extends Controller
 	}
 
     /**
+     * Редирект на оригинальный url, соответствующий полученной строке
      * @param $urlShort
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */

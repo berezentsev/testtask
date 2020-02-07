@@ -11,6 +11,7 @@ use App\dburl\models\Url;
 class UrlRepo implements RepositoryInterface
 {
     /**
+     * Сохранение в базу оригинального url и соответствующей ему короткой строки
      * @param $urlShort
      * @param $originalUrl
      * @return bool
@@ -24,7 +25,7 @@ class UrlRepo implements RepositoryInterface
 		return $model->save();
 	}
 
-    /**
+    /**Находим в базе url, соответствующий строке и возвращаем его
      * @param $urlShort
      * @return string
      */
